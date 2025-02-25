@@ -4,11 +4,11 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mypackage"
-dynamic = ["version"]
-description = ''
+version = "0.1"
+description = 'This is my first Python package'
 readme = "README.md"
 requires-python = ">=3.8"
-license = "MIT"
+license = "Apache-2.0"
 keywords = []
 authors = [
   { name = "Florence Bockting", email = "48919471+florence-bockting@users.noreply.github.com" },
@@ -30,9 +30,6 @@ dependencies = []
 Documentation = "https://github.com/Florence Bockting/mypackage#readme"
 Issues = "https://github.com/Florence Bockting/mypackage/issues"
 Source = "https://github.com/Florence Bockting/mypackage"
-
-[tool.hatch.version]
-path = "src/mypackage/__about__.py"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
