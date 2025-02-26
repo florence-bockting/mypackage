@@ -1,5 +1,6 @@
-from typing import List
+import numpy as np
 
+from typing import List
 
 def print_galton_board(data: List[int]) -> None:
     """
@@ -19,7 +20,7 @@ def print_galton_board(data: List[int]) -> None:
     """
     for val in data:
         # print for each bin a dot for each ball
-        for i in range(0, val):
+        for i in np.arange(0, val):
             
             print(".", end="")
         # show total number of balls within each bin at the end of the line
